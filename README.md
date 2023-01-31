@@ -6,3 +6,5 @@ O objetivo foi a criação de um site de cadastros com API, neste repositório e
 <img src="projetofinal.mp4">
 
 (https://i.imgur.com/vKb2F1B.png)](https://youtu.be/e4ceEfcsMpY)
+
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY)

@@ -5,4 +5,4 @@ O objetivo foi a criação de um site de cadastros com API, neste repositório e
 # Imagens 📸
 <img src="projetofinal.mp4">
 
-(https://i.youtu.be/e4ceEfcsMpY.png)](https://youtu.be/e4ceEfcsMpY)
+[<img src="projeto.jpg" width="50%">](https://www.youtube.com/watch?v=Hc79sDi3f0U "Now in Android: 55")

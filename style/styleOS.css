@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#divTopo {
+    background-color: rgb(12, 12, 12);
+    height: 80px;
+
+}
+
+#divTopo #Empreiteira {
+    font-size: 50px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    margin-right: 1px;
+    margin-left: 1px; /*espaço invisivel á esquerda dele*/
+
+    position: absolute;
+    left: 1%;
+    top: 1.5%;
+}
+
+
+#cliente {
+
+    position: absolute;
+    top: 32px;
+    left: 280px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#funcionario {
+
+    position: absolute;
+    top: 32px;
+    left: 360px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#obra {
+
+    position: absolute;
+    top: 32px;
+    left: 480px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#os {
+
+    position: absolute;
+    top: 32px;
+    left: 550px;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+#entrar {
+
+    position: absolute;
+    top: 32px;
+    right: 295px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#funcionalidades {
+
+    position: absolute;
+    top: 32px;
+    right: 130px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#contato {
+
+    position: absolute;
+    top: 32px;
+    right: 30px;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+#campos {
+
+    position: absolute;
+    left: 36%;
+
+
+}
+
+tbody > tr:hover {
+    
+    color: blue;
+}
+
+#subTitulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#c1 {
+    position: absolute;
+    left: 18%;
+    top: 110px;
+}
+#c2 {
+    position: absolute;
+    left: 23%;
+    top: 110px;
+}
+#c3 {
+    position: absolute;
+    left: 42%;
+    top: 110px;
+}
+#c4 {
+    position: absolute;
+    left: 47%;
+    top: 110px;
+}
+#c5 {
+    position: absolute;
+    left: 64%;
+    top: 110px;
+}
+#c6 {
+    position: absolute;
+    left: 70%;
+    top: 110px;
+}
+
+#botaoCliente {
+    
+    margin-top: 0.4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contCampos {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contCampos > * {
+    margin: 5px;
+}
+
+#tabela-os {
+    width: 80%;
+    margin: auto;
+    margin-bottom : .5em;
+    table-layout: fixed;
+    text-align: center;  
+}
+
+.botao-espaco {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#botaoClienteAlterar {
+    margin:auto;
+    display: flex;    
+
+}
+
+#saibaMais {
+
+    position: absolute;
+    top: 32px;
+    right: 300px;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+*{margin:0; padding: 0; box-sizing: border-box;}
+
+.content{display:flex; margin: auto;}
+
+.mostrar{width: 100%; text-align: center;}
+.mostrar thead{background: black; font-weight: bold; color:#fff;}
+.mostrar tbody tr:nth-child(2n){background: #ccc;}
+.mostrar th , .mostrar td{padding: 7px 0;}
+
+@media screen and (max-width: 480px){
+    .content{width: 94%;}
+
+    .mostrar thead{display:none;}
+    .mostrar tbody td{display: flex; flex-direction: column; }
+}
+
+@media only screen and (min-width: 1200px){
+    .content{width:100%;}
+    .mostrar tbody tr td:nth-child(1){width:10%;}
+    .mostrar tbody tr td:nth-child(2){width:30%;}
+    .mostrar tbody tr td:nth-child(3){width:20%;}
+    .mostrar tbody tr td:nth-child(4){width:10%;}
+    .mostrar tbody tr td:nth-child(5){width:30%;}
+}
+
+/* Botão novo */
+
+.button{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #050505;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .button:hover {background-color: #050505}
+  
+  .button:active {
+    background-color: #050505;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .div-button {
+    display: flex;
+    width: 20%;
+    margin: auto;
+  }
+
+  /* Campo de busca */
+
+.w3-input{
+    padding:8px;
+    display:block;
+    border:none;
+    border-bottom:1px solid #ccc;
+    width:100%
+}
+.w3-border{
+    border:1px solid #ccc!important;
+    width: 100%;
+    
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/styleOS.css">
+    <title>Cadastro Empreiteira</title>
+</head>
+
+<div id="divTopo">
+    <a id="Empreiteira" href="/index.html"> SGE </a>
+
+    <a id="cliente" href="/cliente/clienteInicio.html"> Cliente </a>
+    <a id="funcionario" href="/funcionario/FuncionarioInicio.html"> Colaborador </a>
+    <a id="obra" href="/obra/obraInicio.html"> Obra </a>
+    <a id="os" href="/os/osInicio.html"> Ordem de Serviço </a>
+    
+    <a id="funcionalidades" href="/contato.html"> Funcionalidades </a>
+    <a id="saibaMais" href="/contato.html"> Saiba mais </a>
+    <a id="contato" href="/contato.html"> Contato </a>
+</div>
+
+<body>
+    <div class="div-4">
+        <div name="formulario-os" id="form-os" class="formularios">
+
+            <h1 id="subTitulo">Cadastrar OS</h1>
+           
+            <div id="contCampos">
+            <label for="valor-obra">Valor da obra:</label>
+            <input type="text" id="valor-obra" >
+            <label for="idCliente">Id do cliente:</label>
+            <select type="text" id="idCliente"></select>
+            <label for="idFuncionario">Id do funcionário:</label>
+            <select type="text" id="idFuncionario"></select>
+            <label for="idObra">Id do obra:</label>
+            <select type="text" id="idObra"></select>
+        </div>
+        <div id="botaoCliente">
+                <input type="button" class="button botao-espaco" value="Salvar OS" onclick="handlerSalvarOS()" /> <br>
+                <input type="button" class="button botao-espaco" value="Voltar" onclick="location.href='/os/osInicio.html'"/>
+            </div>
+        </div>
+    </div>
+    <br>
+    </div>
+        <table id="tabela-os" class="mostrar" border="5px">
+            <thead>
+                <tr>
+                    <th>
+                        Ordem de serviço
+                    </th>
+                    <th>
+                        Valor da obra
+                    </th>
+                    <th>
+                        Descrição da obra
+                    </th>
+                    <th>
+                        Nome do cliente
+                    </th>
+                    <th>
+                        Nome do responsável da obra 
+                    </th>
+                    <th>
+                        Data de início
+                    </th>
+                    <th>
+                        Previsão de termino 
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="tabela-os-body">
+            </tbody>
+        </table>
+        </div>
+
+    <script src="/jquery.js"></script>
+    <script src="/utils.js"></script>
+    <script src="/request.js"></script>
+    <script src="/os/OS.js"></script>
+</body>
+
+</html>

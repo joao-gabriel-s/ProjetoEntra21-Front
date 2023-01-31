@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/styleFuncionario.css">
+    <title>Cadastro Empreiteira</title>
+</head>
+
+<div id="divTopo">
+    <a id="Empreiteira" href="/index.html"> SGE </a>
+
+    <a id="cliente" href="/cliente/clienteInicio.html"> Cliente </a>
+    <a id="funcionario" href="/funcionario/FuncionarioInicio.html"> Colaborador </a>
+    <a id="obra" href="/obra/obraInicio.html"> Obra </a>
+    <a id="os" href="/os/osInicio.html"> Ordem de Serviço </a>
+    
+    <a id="funcionalidades" href="/contato.html"> Funcionalidades </a>
+    <a id="saibaMais" href="/contato.html"> Saiba mais </a>
+    <a id="contato" href="/contato.html"> Contato </a>
+</div>
+
+<body>
+    
+        <div name="formulario-funcionario" id="form-funcionario" class="formularios">
+
+            <h1 id="subTitulo">Funcionário</h1>
+           
+            <div id="botaoCliente">
+             <a href="/funcionario/FuncionarioCadastro.html"><input type="button" class="button botao-espaco" value="Cadastrar"/></a>
+            </div>
+
+        </div>
+
+<div id="botaoCliente">
+    <p><label>Buscar por nome</label>
+        <input type="text" class="w3-input w3-border" oninput="ListarPorCriterio(this)"></p>
+</div>
+    
+    <br>
+    <table id="tabela-funcionarios" class="mostrar" border="5px">
+        <thead>
+            <tr>
+                <th>
+                    ID
+                </th>
+                <th>
+                    Nome
+                </th>
+                <th>
+                    CPF
+                </th>
+                <th>
+                    Cargo
+                </th>
+            </tr>
+        </thead>
+        <tbody id="tabela-funcionarios-body">
+
+        </tbody>
+    </table>
+    </div>
+
+
+    <script src="/jquery.js"></script>
+    <script src="/utils.js"></script>
+    <script src="/request.js"></script>
+    <script src="/funcionario/funcionario.js"></script>
+</body>
+
+</html>

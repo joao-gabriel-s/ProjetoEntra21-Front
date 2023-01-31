@@ -1,0 +1,74 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style/styleCliente.css">
+        <title>Cadastro Empreiteira</title>
+    </head>
+    
+    
+    <div id="divTopo">
+        <a id="Empreiteira" href="/index.html"> Empreiteira </a>
+    
+        <a id="cliente" href="/cliente/clienteInicio.html"> Cliente </a>
+        <a id="funcionario" href="/funcionario/FuncionarioInicio.html"> Colaborador </a>
+        <a id="obra" href="/obra/obraInicio.html"> Obra </a>
+        <a id="os" href="/os/osInicio.html"> Ordem de Serviço </a>
+    
+        <a id="funcionalidades" href="/contato.html"> Funcionalidades </a>
+        <a id="saibaMais" href="/contato.html"> Saiba mais </a>
+        <a id="contato" href="/contato.html"> Contato </a>
+    </div>
+    
+    
+    <body>
+        <div name="formulario-inicial" id="form" class="formularios" >
+            <br>
+            <h1 id="subTitulo">Cadastrar Cliente</h1>  
+            <div id="subTitulo">
+                <label for="cliente-nome">Nome:</label>
+                <input type="text" class="w3-input w3-border" id="cliente-nome" />
+                <label for="cliente-cnpj">CNPJ:</label>
+                <input type="text" class="w3-input w3-border" id="cliente-cnpj" />
+                <label for="cliente-telefone">Telefone:</label>
+                <input type="text" class="w3-input w3-border" id="cliente-telefone" />              
+            </div>                    
+            <div id="botaoCliente">
+                <input type="button" class="button botao-espaco" value="Adicionar Cliente" onclick="handlerSalvarCliente()" />    
+                <input type="button" class="button botao-espaco" value="Voltar" onclick="location.href='/cliente/clienteInicio.html'"/>         
+            </div>
+        </div>
+        <br>
+        <table id="tabela-clientes" class="mostrar" border="5px">
+            <thead>
+                <tr>
+                    <th>
+                        ID
+                    </th>
+                    <th>
+                        Nome
+                    </th>
+                    <th>
+                        CNPJ
+                    </th>
+                    <th>
+                        Telefone
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="tabela-clientes-body">
+                
+            </tbody>
+        </table>
+    </div>
+    
+    
+    
+</div>
+<script src="/jquery.js"></script>
+<script src="/utils.js"></script>
+<script src="/request.js"></script>
+<script src="/cliente/cliente.js"></script>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Cadastro Empreiteira</title>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100%;
+            height: 100%;
+        }
+
+        form{
+            width: 300px;
+            margin: 200px auto;
+            text-align: center;
+        }
+
+        input{
+            display: block;
+            margin: 10px auto;
+            width: 250px;
+            height: 30px;
+        }
+
+        #container{
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+    </style>
+</head>
+
+<div id="divTopo">
+    <a id="Empreiteira" href="index.html"> SGE</a>
+
+    <a id="funcionalidades" href="contato.html"> Funcionalidades </a>
+    <a id="saibaMais" href="contato.html"> Saiba mais </a>
+    <a id="contato" href="contato.html"> Contato </a>
+</div>
+
+<body>
+
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <br><br><br><br>
+    <div class="login-block">
+        <p class="titulo">SGE</p>
+        <h4>Login</h4>
+        <input type="text" value="" placeholder="Usuário" id="login" />
+        <input type="password" value="" placeholder="Senha" id="senha" />
+        <a href="/cliente/clienteInicio.html"><button onclick="logar()">Entrar</button></a>
+    </div>
+</div>
+
+<script>
+
+
+    function logar(){
+
+        var login = document.getElementById('login').value;
+        var senha = document.getElementById('senha').value;
+
+        if(login == "admin" && senha == "admin"){
+            alert('Sucesso');
+            location.href = "clienteInicio.html";
+        }else{
+            alert('Usuario ou senha incorretos');
+        }
+
+    }
+
+</script>
+</body>
+
+</html>

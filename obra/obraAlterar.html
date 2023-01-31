@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/styleObra.css">
+    <title>Cadastro Empreiteira</title>
+</head>
+
+<div id="divTopo">
+    <a id="Empreiteira" href="/index.html"> SGE </a>
+    
+    <a id="cliente" href="/cliente/clienteInicio.html"> Cliente </a>
+    <a id="funcionario" href="/funcionario/FuncionarioInicio.html"> Colaborador </a>
+    <a id="obra" href="/obra/obraInicio.html"> Obra </a>
+    <a id="os" href="/os/osInicio.html"> Ordem de Serviço </a>
+    
+    <a id="funcionalidades" href="/contato.html"> Funcionalidades </a>
+    <a id="saibaMais" href="/contato.html"> Saiba mais </a>
+    <a id="contato" href="/contato.html"> Contato </a>
+</div>
+
+<body>
+    
+    <div>
+        <div id="alterar-obra" class="ocultar">
+            <h1 id="subTitulo">Alterar Obra</h1>
+            <br>
+            <div id="contCampos" class="input-group row justify-content-center">
+                <label for="obra-id-alterar">ID</label>
+                <input type="text" class="form-control col-4 input-group"  id="obra-id-alterar" readonly>
+            </div>
+            <br>
+            <div id="contCampos">
+                <label for="obra-descricao-alterar">Descrição:</label>
+                <input type="text" class="w3-input w3-border" id="obra-descricao-alterar" />
+                <label for="obra-inicio-alterar">Data de início da obra:</label>
+                <input type="date" class="w3-input w3-border" id="obra-inicio-alterar" />
+                <label for="obra-final-alterar">Previsão de término:</label>
+                <input type="date" class="w3-input w3-border" id="obra-final-alterar" />
+            </div>
+            <br>
+            <div class="div-button">
+                <input type="button" class="button botao-espaco" value="Alterar Obra" onclick="handlerAlterarObra()" />
+                <input type="button" class="button botao-espaco" value="Voltar" onclick="location.href='/obra/obraInicio.html' "/>
+                <input type="button" class="button botao-espaco" value="Deletar" onclick="handlerDeleteObra()" />
+            </div>
+            <br>
+        </div>
+        <table id="tabela-obras" class="mostrar" border="5px">
+            <thead>
+                <tr>
+                    <th>
+                        ID
+                    </th>
+                    <th>
+                        Descrição
+                    </th>
+                    <th>
+                        Data de início da obra
+                    </th>
+                    <th>
+                        Previsão de término
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="tabela-obras-body">
+                
+            </tbody>
+        </table>
+    </div>
+    
+    
+    <script src="/jquery.js"></script>
+    <script src="/utils.js"></script>
+    <script src="/request.js"></script>
+    <script src="/cliente/cliente.js"></script>
+    <script src="/funcionario/funcionario.js"></script>
+    <script src="/obra/obra.js"></script>
+    <script src="/obra/obraAlterar.js"></script>
+    <script src="/os/OS.js"></script>
+</body>
+
+</html>
